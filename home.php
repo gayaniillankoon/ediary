@@ -35,7 +35,7 @@ session_start(); // start the session
                                                  background-size: cover;">
 
 <div class="container-fluid">
-    <?php include_once 'includes/nav.php'?>
+    <?php $page='home'; include_once 'includes/nav.php'?>
 
 <div class="container-fluid">
 <div class="row">

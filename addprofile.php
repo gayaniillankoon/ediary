@@ -26,12 +26,26 @@ $db_acc=db_con::db_access();
 	
 	//echo "hhh";
 
-$sql = "INSERT INTO users(name, address,birth, tel, mobile, businessaddress, telb, fax, emailb, religion, ID, dl, passport, blood, bank, acc, user)
-VALUES ('$name', '$address', '$birth', '$tel', '$mobile', '$businessaddress', '$telb', '$fax', '$emailb', '$religion', '$ID', '$dl', '$passport', '$blood','$bank', '$acc', '$username' )";
+//$sql = "INSERT INTO users(name, address,birth, tel, mobile, businessaddress, telb, fax, emailb, religion, ID, dl, passport, blood, bank, acc, user)VALUES ('$name', '$address', '$birth', '$tel', '$mobile', '$businessaddress', '$telb', '$fax', '$emailb', '$religion', '$ID', '$dl', '$passport', '$blood','$bank', '$acc', '$username' )";
 
 $sql2 = "UPDATE users SET 
 		name = '$name',
-		address = '$address'
+		address = '$address',
+		birth = '$birth',
+		tel = '$tel',
+		mobile = '$mobile',
+		businessaddress = '$businessaddress',
+		telb = '$telb',
+		fax = '$fax',
+		emailb = '$emailb', 
+		religion = '$religion',
+		ID = '$ID',
+		dl = '$dl',
+		passport = '$passport',
+		blood = '$blood',
+		bank = '$bank',
+		acc = '$acc',
+		user = '$username'
 		WHERE username = '$username'";
 
 if ($conn->query($sql2) === TRUE) {

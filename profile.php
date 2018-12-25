@@ -34,14 +34,20 @@ session_start(); // start the session
 
 
 <div class="container-fluid">
-    <?php include_once 'includes/nav.php'?>
+    <?php $page='profile'; include_once 'includes/nav.php'?>
 <br/>
 
 <div class="row">
 <div class="col-sm-12">
   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwdetails">
   Add Details
-</button>
+  </button>
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#nwdetails">
+  Edit Details
+  </button>
+   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#nwdetails">
+  Delete Details
+  </button>
 
 
 <!-- The Modal -->
@@ -59,70 +65,137 @@ session_start(); // start the session
       <div class="modal-body">
        <form action="addprofile.php" method="post">
       
-      <div class="form-group">
+      <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
             <label for="name" style="color: black">Name :</label>
             <input type="text" class="form-control" id="name" placeholder="Name" name="name">
         </div>
+      </div>  
+      </div>
+
+      <div class="row">
+      <div class="col-md-12">  
         <div class="form-group">
             <label for="address" style="color: black">Address :</label>
             <input type="text" class="form-control" id="address" placeholder="Address" name="address">
         </div>
-        <div class="form-group">
+      </div>  
+      </div>
+      
+      <div class="row">
+      <div class="col-md-4"> 
+       <div class="form-group">
             <label for="birth" style="color: black">Date of birth :</label>
             <input type="date" class="form-control" id="birth" placeholder="Date of birth" name="birth">
-        </div>
-        <div class="form-group">
+       </div>
+      </div> 
+      <div class="col-md-4">
+       <div class="form-group">
+            <label for="IDP" style="color: black">I.D. No :</label>
+            <input type="text" class="form-control" id="ID" placeholder="I.D.No" name="IDP">
+        </div> 
+      </div>
+      <div class="col-md-4">
+       <div class="form-group">
+            <label for="blood" style="color: black">Blood Group :</label>
+            <input type="text" class="form-control" id="blood" placeholder="Blood Group" name="blood">
+        </div> 
+      </div> 
+      </div>
+
+
+      <div class="row">
+      <div class="col-md-6"> 
+       <div class="form-group">
             <label for="tel" style="color: black">Telephone:</label>
             <input type="text" class="form-control" id="tel" placeholder="Telephone" name="tel">
         </div>
+      </div> 
+      <div class="col-md-6">
         <div class="form-group">
             <label for="mobile" style="color: black">Mobile :</label>
             <input type="text" class="form-control" id="mobile" placeholder="Mobile" name="mobile">
-        </div>
-        <div class="form-group">
+        </div> 
+      </div>
+      </div>  
+
+      <div class="row"> 
+      <div class="col-md-12"> 
+      <div class="form-group">
             <label for="businessaddress" style="color: black">Business Address :</label>
             <input type="text" class="form-control" id="businessaddress" placeholder="Business Address" name="businessaddress">
         </div>
-        <div class="form-group">
+      </div>
+      </div> 
+
+      <div class="row"> 
+      <div class="col-md-4"> 
+       <div class="form-group">
             <label for="telb" style="color: black">Telephone:</label>
             <input type="text" class="form-control" id="telb" placeholder="Telephone" name="telb">
         </div>
-        <div class="form-group">
+      </div>
+      <div class="col-md-4">
+       <div class="form-group">
             <label for="fax" style="color: black">Fax :</label>
             <input type="text" class="form-control" id="fax" placeholder="Fax" name="fax">
-        </div>
+        </div> 
+      </div>
+      <div class="col-md-4">
         <div class="form-group">
             <label for="emailb" style="color: black">Email :</label>
             <input type="email" class="form-control" id="emailb" placeholder="Email" name="emailb">
         </div>
-        <div class="form-group">
+      </div>
+      </div>
+
+        
+      <div class="row"> 
+      <div class="col-md-4"> 
+       <div class="form-group">
             <label for="religion" style="color: black">Religion :</label>
             <input type="text" class="form-control" id="religion" placeholder="Religion" name="religion">
         </div>
-        <div class="form-group">
-            <label for="IDP" style="color: black">I.D. No :</label>
-            <input type="text" class="form-control" id="ID" placeholder="I.D.No" name="IDP">
-        </div>
-        <div class="form-group">
+      </div>
+      <div class="col-md-4">
+       <div class="form-group">
             <label for="dl" style="color: black">D.L. No:</label>
             <input type="text" class="form-control" id="dl" placeholder="D.L.No" name="dl">
         </div>
-        <div class="form-group">
+      </div>
+      <div class="col-md-4">
+       <div class="form-group">
             <label for="passport" style="color: black">Passport no:</label>
             <input type="text" class="form-control" id="passport" placeholder="Passport no" name="passport">
         </div>
-        <div class="form-group">
-            <label for="blood" style="color: black">Blood Group :</label>
-            <input type="text" class="form-control" id="blood" placeholder="Blood Group" name="blood">
-        </div>
-        <div class="form-group">
+      </div>
+      </div>
+
+
+      <div class="row"> 
+      <div class="col-md-12"> 
+       <div class="form-group">
             <label  style="color: black"><b>Banking Information</b></label><br>
+        </div>
+       </div> 
+      </div> 
+      <div class="row"> 
+      <div class="col-md-6"> 
+       <div class="form-group"> 
             <label for="bank" style="color: black">Bank :</label>
             <input type="text" class="form-control" id="bank" placeholder="Bank" name="bank">
+       </div>       
+      </div>
+      <div class="col-md-6">
+       <div class="form-group">
             <label for="acc" style="color: black">Acc.No:</label>
             <input type="text" class="form-control" id="acc" placeholder="Acc. No" name="acc">
-        </div>
+       </div>   
       </div>
+      </div> 
+        
+      
 
       <!-- Modal footer -->
       <div class="modal-footer">
@@ -135,8 +208,10 @@ session_start(); // start the session
 </div>
 </div>
 </div>
+</div>
+</div>
 <br/>
-
+   
 
   <div class="row">
   <div class="col-sm-1">

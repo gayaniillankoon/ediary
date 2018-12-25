@@ -34,7 +34,7 @@ session_start(); // start the session
 
 
 <div class="container-fluid">
-    <?php include_once 'includes/nav.php'?>
+    <?php $page='contacts'; include_once 'includes/nav.php'?>
 <br/>
 
 <div class="row">

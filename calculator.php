@@ -59,7 +59,7 @@ session_start(); // start the session
                                                  background-repeat: no-repeat;
                                                  background-size: cover;">
 <div class="container-fluid">
-    <?php include_once 'includes/nav.php'?></div>
+    <?php $page='calculator'; include_once 'includes/nav.php'?></div>
 
 <div class="row"><div class="col-md-12"></div></div>
 <br><br><br>
