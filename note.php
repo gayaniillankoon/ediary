@@ -184,10 +184,22 @@ session_start(); // start the session
   <span id="interim_span" class="interim"></span>
   <p>
 </div>
+
+      <br>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwnote"> Save Note</button>
+
+      <script>
+          $('#interim_span').bind("DOMSubtreeModified",function(){
+              console.log($('#final_span').html());
+              $('#note').val($('#final_span').html());
+          });
+
+      </script>
+
 <div class="center">
   <div class="sidebyside" style="text-align:right">
-    <button id="copy_button" class="button" onclick="copyButton()">
-      Copy and Paste</button>
+<!--    <button id="copy_button" class="button" onclick="copyButton()">-->
+<!--      Copy and Paste</button>-->
     <div id="copy_info" class="info">
       Press Control-C to copy text.<br>(Command-C on Mac.)
     </div>
@@ -204,7 +216,7 @@ session_start(); // start the session
   <div class="col-md-5">
   <div class="row">
   <div class="col-sm-12">
-  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwnote"> Add New Note</button>
+
 
 
 <!-- The Modal -->
@@ -221,7 +233,7 @@ session_start(); // start the session
       <!-- Modal body -->
      <div class="modal-body">
        <form action="addnote.php" method="post">
-      Date:  <input type="date" id="date" name="date"><br> <br>
+      Date:  <input type="date" id="date" name="date" required><br> <br>
       Note:  <textarea  id="note" name="note" rows="10" cols="40"> </textarea><br> <br>
     </div>
 
