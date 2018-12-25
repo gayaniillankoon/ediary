@@ -58,36 +58,8 @@ session_start(); // start the session
 <body background="includes/images/i.jpg" style ="background-position: center;
                                                  background-repeat: no-repeat;
                                                  background-size: cover;">
-<div class="container-fluid">                                                 
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="home.php">My Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="note.php">My Daily Notes</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="contacts.php">My Contacts</a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="calculator.php">Calculator</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="findlocation.php">My Location</a>
-    </li>
-    <li class="nav-item">
-    <a class="navbar-brand" href="profile.php">
-    <img src="includes/images/avatar.png" alt="Logo" style="width:40px;">
-    </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="logout.php">Logout</a>
-    </li>
-  </ul>
-<br/>
-</nav>
-</div>             
+<div class="container-fluid">
+    <?php include_once 'includes/nav.php'?></div>
 
 <div class="row"><div class="col-md-12"></div></div>
 <br><br><br>
