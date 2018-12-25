@@ -1,0 +1,49 @@
+CREATE TABLE  `ediary`.`notes` (
+`id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`date` DATE NOT NULL ,
+`note` VARCHAR( 255 ) NOT NULL ,
+`user` VARCHAR( 20 ) NOT NULL
+) ENGINE = MYISAM ;
+
+CREATE TABLE  `ediary`.`tbl_events` (
+`id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`title` VARCHAR( 255 ) NOT NULL ,
+`start` DATETIME NOT NULL ,
+`end` DATETIME NOT NULL ,
+`user` VARCHAR( 20 ) NOT NULL
+) ENGINE = MYISAM ;
+
+CREATE TABLE  `ediary`.`tbl_contacts` (
+`id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`name` VARCHAR( 50 ) NOT NULL ,
+`mobile1` INT( 10 ) NOT NULL ,
+`mobile2` INT( 10 ) NOT NULL ,
+`home` INT( 10 ) NOT NULL ,
+`email` VARCHAR( 25 ) NOT NULL ,
+`user` VARCHAR( 25 ) NOT NULL
+) ENGINE = MYISAM ;
+
+CREATE TABLE  `ediary`.`users` (
+`user_id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`fullname` VARCHAR( 40 ) NOT NULL ,
+`username` VARCHAR( 25 ) NOT NULL ,
+`password` VARCHAR( 25 ) NOT NULL ,
+`name` VARCHAR( 50 ) NOT NULL ,
+`address` VARCHAR( 100 ) NOT NULL ,
+`birth` DATE NOT NULL ,
+`tel` VARCHAR( 50 ) NOT NULL ,
+`mobile` VARCHAR( 50 ) NOT NULL ,
+`businessaddress` VARCHAR( 100 ) NOT NULL ,
+`telb` VARCHAR( 50 ) NOT NULL ,
+`fax` VARCHAR( 50 ) NOT NULL ,
+`emailb` VARCHAR( 50 ) NOT NULL ,
+`religion` VARCHAR( 50 ) NOT NULL ,
+`ID` VARCHAR( 50 ) NOT NULL ,
+`dl` VARCHAR( 50 ) NOT NULL ,
+`passport` VARCHAR( 50 ) NOT NULL ,
+`blood` VARCHAR( 50 ) NOT NULL ,
+`bank` VARCHAR( 50 ) NOT NULL ,
+`acc` VARCHAR( 50 ) NOT NULL ,
+`user` VARCHAR( 40 ) NOT NULL
+) ENGINE = MYISAM ;
+
