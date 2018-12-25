@@ -15,7 +15,7 @@ require_once 'db_access.php';
 $db_acc=db_con::db_access();
 
 if(isset($_POST['update_note'])){
-    $sql = "UPDATE notes SET note = '".$_POST['note_content']."', date = '".$_POST['note_date']."' WHERE id = '".$_GET['id']."'";
+    $sql = "UPDATE notes SET note = '".mysqli_real_escape_string($conn,($_POST['note_content']))."', date = '".$_POST['note_date']."' WHERE id = '".$_GET['id']."'";
     $result= mysqli_query($conn,$sql) or die(mysqli_error($conn));
     header("location:note.php");
 }
