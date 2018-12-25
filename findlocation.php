@@ -59,12 +59,6 @@ session_start(); // start the session
       <a class="nav-link" href="contacts.php">My Contacts</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="indexcal.php">My Calendar</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="gallery.php">My Gallery</a>
-    </li>
-    <li class="nav-item">
       <a class="nav-link" href="calculator.php">Calculator</a>
     </li>
     <li class="nav-item active">

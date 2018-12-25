@@ -1,49 +1,135 @@
-CREATE TABLE  `ediary`.`notes` (
-`id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-`date` DATE NOT NULL ,
-`note` VARCHAR( 255 ) NOT NULL ,
-`user` VARCHAR( 20 ) NOT NULL
-) ENGINE = MYISAM ;
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Dec 25, 2018 at 04:41 AM
+-- Server version: 5.1.53
+-- PHP Version: 5.3.4
 
-CREATE TABLE  `ediary`.`tbl_events` (
-`id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-`title` VARCHAR( 255 ) NOT NULL ,
-`start` DATETIME NOT NULL ,
-`end` DATETIME NOT NULL ,
-`user` VARCHAR( 20 ) NOT NULL
-) ENGINE = MYISAM ;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
-CREATE TABLE  `ediary`.`tbl_contacts` (
-`id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-`name` VARCHAR( 50 ) NOT NULL ,
-`mobile1` INT( 10 ) NOT NULL ,
-`mobile2` INT( 10 ) NOT NULL ,
-`home` INT( 10 ) NOT NULL ,
-`email` VARCHAR( 25 ) NOT NULL ,
-`user` VARCHAR( 25 ) NOT NULL
-) ENGINE = MYISAM ;
 
-CREATE TABLE  `ediary`.`users` (
-`user_id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-`fullname` VARCHAR( 40 ) NOT NULL ,
-`username` VARCHAR( 25 ) NOT NULL ,
-`password` VARCHAR( 25 ) NOT NULL ,
-`name` VARCHAR( 50 ) NOT NULL ,
-`address` VARCHAR( 100 ) NOT NULL ,
-`birth` DATE NOT NULL ,
-`tel` VARCHAR( 50 ) NOT NULL ,
-`mobile` VARCHAR( 50 ) NOT NULL ,
-`businessaddress` VARCHAR( 100 ) NOT NULL ,
-`telb` VARCHAR( 50 ) NOT NULL ,
-`fax` VARCHAR( 50 ) NOT NULL ,
-`emailb` VARCHAR( 50 ) NOT NULL ,
-`religion` VARCHAR( 50 ) NOT NULL ,
-`ID` VARCHAR( 50 ) NOT NULL ,
-`dl` VARCHAR( 50 ) NOT NULL ,
-`passport` VARCHAR( 50 ) NOT NULL ,
-`blood` VARCHAR( 50 ) NOT NULL ,
-`bank` VARCHAR( 50 ) NOT NULL ,
-`acc` VARCHAR( 50 ) NOT NULL ,
-`user` VARCHAR( 40 ) NOT NULL
-) ENGINE = MYISAM ;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
 
+--
+-- Database: `ediary`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notes`
+--
+
+CREATE TABLE IF NOT EXISTS `notes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `note` varchar(255) NOT NULL,
+  `user` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+
+--
+-- Dumping data for table `notes`
+--
+
+INSERT INTO `notes` (`id`, `date`, `note`, `user`) VALUES
+(1, '2018-12-16', ' today is the best day in my life', 'gayanilakshi101@gmai'),
+(2, '2018-12-16', ' today is the best day', 'gayanilakshi101@gmai'),
+(3, '2018-12-10', ' hjjjjjjjjjjjjj', 'gayanilakshi101@gmai'),
+(4, '2018-12-11', ' jjjjjjjjjjjjjjjjj', 'gayanilakshi101@gmai'),
+(5, '2018-12-05', ' ccccccccccccccccccccccc', 'rashila@gmail.com'),
+(6, '2018-12-18', ' hhhhhhhhhhhhhhhhh', 'gayanilakshi101@gmai'),
+(7, '2018-12-12', ' ', 'gayanilakshi101@gmai'),
+(8, '2018-12-22', ' ghfh', 'gayanilakshi101@gmai'),
+(9, '0000-00-00', ' SSSDFDFSSFSD', 'rashila@gmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_contacts`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_contacts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `mobile1` int(10) NOT NULL,
+  `mobile2` int(10) NOT NULL,
+  `home` int(10) NOT NULL,
+  `email` varchar(25) NOT NULL,
+  `user` varchar(25) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `tbl_contacts`
+--
+
+INSERT INTO `tbl_contacts` (`id`, `name`, `mobile1`, `mobile2`, `home`, `email`, `user`) VALUES
+(1, 'Gayani', 987, 9876, 999, 'Gayani@gmail.com', 'gayanilakshi101@gmail.com'),
+(2, 'jhhhhhhhhhhhhhhhhh', 0, 0, 0, '', 'rashila@gmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_events`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `start` datetime NOT NULL,
+  `end` datetime NOT NULL,
+  `user` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `tbl_events`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `fullname` varchar(40) NOT NULL,
+  `username` varchar(25) NOT NULL,
+  `password` varchar(25) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `birth` date NOT NULL,
+  `tel` varchar(50) NOT NULL,
+  `mobile` varchar(50) NOT NULL,
+  `businessaddress` varchar(100) NOT NULL,
+  `telb` varchar(50) NOT NULL,
+  `fax` varchar(50) NOT NULL,
+  `emailb` varchar(50) NOT NULL,
+  `religion` varchar(50) NOT NULL,
+  `ID` varchar(50) NOT NULL,
+  `dl` varchar(50) NOT NULL,
+  `passport` varchar(50) NOT NULL,
+  `blood` varchar(50) NOT NULL,
+  `bank` varchar(50) NOT NULL,
+  `acc` varchar(50) NOT NULL,
+  `user` varchar(40) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `fullname`, `username`, `password`, `name`, `address`, `birth`, `tel`, `mobile`, `businessaddress`, `telb`, `fax`, `emailb`, `religion`, `ID`, `dl`, `passport`, `blood`, `bank`, `acc`, `user`) VALUES
+(1, 'Gayani Illankoon', 'gayanilakshi101@gmail.com', '1996imnti', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(2, 'yashoda lakmini', 'yashoda@gmail.cpm', 'yashoda', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(3, 'rashila', 'rashila@gmail.com', 'rashila', 'Gayani and tharindu', 'qweqweqweqweqe', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(4, '', '', '', 'Gayani', 'Das', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', 'rashila@gmail.com');
