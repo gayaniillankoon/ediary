@@ -46,6 +46,8 @@ session_start(); // start the session
 <body background="includes/images/i.jpg" style ="background-position: center;
                                                  background-repeat: no-repeat;
                                                  background-size: cover;">
+
+
 <div class="container-fluid">
     <?php $page='findlocation'; include_once 'includes/nav.php'?>
 
@@ -118,7 +120,15 @@ function geocode($address){
     <input type='submit' value='Search' />
     </form>
 </div>
-<div class="col-md-2"></div>
+<div class="col-md-2">
+    <div class="row"> 
+     <div class="col-md-8">
+          <br><br>
+          <button onclick="location.href='test.php'" type="submit" name="world map" class="btn btn-success">world map</button>
+     </div>
+     <div class="col-md-2"></div>
+     </div>
+</div>
 </div>
 </body>
 

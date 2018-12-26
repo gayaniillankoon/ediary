@@ -154,7 +154,7 @@ session_start(); // start the session
 </div>
 
       <br>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwnote"> Save Note</button>
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#nwnote"> Save Note</button>
 
       <script>
           $('#interim_span').bind("DOMSubtreeModified",function(){
@@ -184,7 +184,7 @@ session_start(); // start the session
   <div class="col-md-5">
   <div class="row">
   <div class="col-sm-12">
-
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#nwnote"> Add New Note</button>
 
 
 <!-- The Modal -->

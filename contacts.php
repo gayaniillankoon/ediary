@@ -43,7 +43,7 @@ session_start(); // start the session
 <div class="col-md-8">
 <div class="row">
 <div class="col-sm-12">
-  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwcontact">
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#nwcontact">
   Add New Contact
 </button>
 

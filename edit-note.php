@@ -69,9 +69,9 @@ if($rec = mysqli_fetch_assoc($result)) {
         <br>
 
         <div class="right">
-
+           <img src="includes/images/edit.png" width="70px" height="60px"><br><br>
         </div>
-        <form style="padding: 12px 15px;background-image:linear-gradient(#ADFF2F,#9ACD32,#ADFF2F);" method="post" action="edit-note.php?id=<?php echo $_GET['id']; ?>">
+        <form method="post" action="edit-note.php?id=<?php echo $_GET['id']; ?>">
              <textarea name="note_content" cols="60" rows="7"><?php echo $note_data['content'];  ?></textarea>
             <input type="date" id="date" name="note_date" value="<?php echo $note_data['date'];  ?>" required>
             <br>
