@@ -144,7 +144,7 @@ if($nor>0)
 				echo("<td>".$rec["mobile2"]."</td>");
 				echo("<td>".$rec["home"]."</td>");
 				echo("<td>".$rec["email"]."</td>");
-      echo("<td><button type='button' class='btn btn-success'> Edit </button></td>");
+      echo "<td><a href='edit-contacts.php?id=".$rec["id"]."' type='button' class='btn btn-success' > Edit </a></td>";
       echo("<td><button type='button' class='btn btn-danger'> <a href=\"delcontact.php?conid={$rec['id']}\" onclick=\"return confirm('Delete the Contact?');\">Delete</a> </button></td>");
 				
 				

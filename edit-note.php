@@ -47,85 +47,7 @@ if($rec = mysqli_fetch_assoc($result)) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <style>
-        * {
-            font-family: Verdana, Arial, sans-serif;
-        }
-        a:link {
-            color:#000;
-            text-decoration: none;
-        }
-        a:visited {
-            color:#000;
-        }
-        a:hover {
-            color:#33F;
-        }
-        .button {
-            background: -webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
-            border: 1px solid #076bd2;
-            border-radius: 3px;
-            color: #fff;
-            display: none;
-            font-size: 13px;
-            font-weight: bold;
-            line-height: 1.3;
-            padding: 8px 25px;
-            text-align: center;
-            text-shadow: 1px 1px 1px #076bd2;
-            letter-spacing: normal;
-        }
-        .center {
-            padding: 10px;
-            text-align: center;
-        }
-        .final {
-            color: black;
-            padding-right: 3px;
-        }
-        .interim {
-            color: gray;
-        }
-        .info {
-            font-size: 14px;
-            text-align: center;
-            color: #777;
-            display: none;
-        }
-        .right {
-            float: right;
-        }
-        .sidebyside {
-            display: inline-block;
-            width: 45%;
-            min-height: 40px;
-            text-align: left;
-            vertical-align: top;
-        }
-        #headline {
-            font-size: 40px;
-            font-weight: 300;
-        }
-        #info {
-            font-size: 20px;
-            text-align: center;
-            color: #777;
-            visibility: hidden;
-        }
-        #results {
-            font-size: 14px;
-            font-weight: bold;
-            border: 2px solid #4682b4;
-            padding: 15px;
-            text-align: left;
-            min-height: 150px;
-        }
-        #start_button {
-            border: 0;
-            background-color:transparent;
-            padding: 0;
-        }
-    </style>
+    
 </head>
 
 
@@ -149,36 +71,18 @@ if($rec = mysqli_fetch_assoc($result)) {
         <div class="right">
 
         </div>
-        <form method="post" action="edit-note.php?id=<?php echo $_GET['id']; ?>">
-             <textarea name="note_content" cols="80" rows="7"><?php echo $note_data['content'];  ?></textarea>
+        <form style="padding: 12px 15px;background-image:linear-gradient(#ADFF2F,#9ACD32,#ADFF2F);" method="post" action="edit-note.php?id=<?php echo $_GET['id']; ?>">
+             <textarea name="note_content" cols="60" rows="7"><?php echo $note_data['content'];  ?></textarea>
             <input type="date" id="date" name="note_date" value="<?php echo $note_data['date'];  ?>" required>
             <br>
             <br>
             <button type="submit" name="update_note" class="btn btn-success"> Update Note</button>
         </form>
-
-
-
-        <div class="center">
-            <div class="sidebyside" style="text-align:right">
-                <!--    <button id="copy_button" class="button" onclick="copyButton()">-->
-                <!--      Copy and Paste</button>-->
-                <div id="copy_info" class="info">
-                    Press Control-C to copy text.<br>(Command-C on Mac.)
-                </div>
-            </div>
-            <p>
-
-        </div>
     </div>
 
     <div class="col-md-5">
         <div class="row">
             <div class="col-sm-12">
-
-
-
-
             </div>
         </div>
         </form>

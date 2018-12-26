@@ -39,7 +39,7 @@ session_start(); // start the session
 
 <div class="container-fluid">
 <div class="row">
-	<div class="col-md-4" style="background-color: #4682b4; text-align:center">
+	<div class="col-md-4" style="background-image:linear-gradient(#4682B4,#7B68EE,#4169E1,#1E90FF); text-align:center">
 		<br><br><br>
 		<script type="text/javascript">
             calendar();
@@ -61,7 +61,7 @@ session_start(); // start the session
 </div>
 
 <div class="row">
-	<div class="col-md-4" style="background-color: #4682b4; height:400px;"></div>
+	<div class="col-md-4" style="background-image:linear-gradient(#1E90FF,#4169E1,#7B68EE,#4682B4); height:400px;"></div>
 	<div class="col-md-8" style="text-align:center;color:black;background:url(includes/images/wood.jpg);">
 		 <h2>.. Notifications ..</h2>
          <h3>
