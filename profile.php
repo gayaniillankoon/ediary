@@ -39,15 +39,7 @@ session_start(); // start the session
 
 <div class="row">
 <div class="col-sm-12">
-  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwdetails">
-  Add Details
-  </button>
-  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#nwdetails">
-  Edit Details
-  </button>
-   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#nwdetails">
-  Delete Details
-  </button>
+  
 
 
 <!-- The Modal -->
@@ -217,7 +209,7 @@ session_start(); // start the session
   <div class="col-sm-1">
     
     </div>
- <div class="col-sm-8">
+ <div class="col-sm-6">
        
        <?php
 require_once 'db_access.php';
@@ -257,6 +249,8 @@ if($nor>0)
 	}
 ?>
 
+<h1 style="color:#4682B4;"><b>Profile</b></h1><br>
+
 <table class="table table-borderless table-sm table-responsive"  align="center">
 
 
@@ -291,8 +285,16 @@ if($nor>0)
 
 
     </div>
-    <div class="col-sm-3">
-          
+    <div class="col-sm-5">
+       <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwdetails">
+        Add Details
+       </button>
+       <button type="button" class="btn btn-info" data-toggle="modal" data-target="#nwdetails">
+        Edit Details
+       </button>
+       <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#nwdetails">
+        Delete Details
+       </button>   
   
     </div>
   </div>

@@ -51,9 +51,9 @@ session_start(); // start the session
     <br>
     <h1><img src="includes/images/WW.png" style="width:150px;height:150px;">Dear eDiary</h1><br>
     
-      <h1 style="text-align: center"><b><i>"ThE sAfEsT pLaCe FoR yOuR tHoUgHtS."</i></b></h1>
-      <br><br>
-      <h4><b> "Dear eDiary" is a place you can feel safe expressing yourself without judgment. You can write anything about any topic you decide, without worrying if someone else will see it. It is a place where your hopes and dreams can flow freely.</b></h4><br>
+      <h2 style="text-align: center"><b><i>"ThE sAfEsT pLaCe FoR yOuR tHoUgHtS."</i></b></h2>
+      <br>
+      <h5><b> "Dear eDiary" is a place you can feel safe expressing yourself without judgment. You can write anything about any topic you decide, without worrying if someone else will see it. It is a place where your hopes and dreams can flow freely.</b></h5><br>
     
     </div>
 
@@ -61,7 +61,19 @@ session_start(); // start the session
 </div>
 
 <div class="row">
-	<div class="col-md-4" style="background-image:linear-gradient(#1E90FF,#4169E1,#7B68EE,#4682B4); height:400px;"></div>
+	<div class="col-md-4" style="background-color:white; height:400px;">
+   &nbsp;<h2><img src="includes/images/network.png" style="width:120px;height:120px;"><b><i>Connect</i></b></h2>
+   &nbsp;<a href="https://www.facebook.com/"> <img src="includes/images/facebook.png" style="width:70px;height:70px;"></a> &nbsp;
+  <a href="https://plus.google.com/discover"> <img src="includes/images/google-plus.png" style="width:70px;height:70px;"></a> &nbsp;
+  <a href="https://www.linkedin.com/">  <img src="includes/images/linkedin.png" style="width:70px;height:70px;"></a> &nbsp;
+  <a href="https://www.skype.com/en/"> <img src="includes/images/skype.png" style="width:70px;height:70px;"></a> &nbsp;
+  <a href="https://www.tumblr.com/"> <img src="includes/images/tumblr.png" style="width:70px;height:70px;"></a> <br><br>
+   &nbsp;<a href="https://twitter.com/login?lang=en"> <img src="includes/images/twitter.png" style="width:70px;height:70px;"></a> &nbsp;
+  <a href="https://www.instagram.com/?hl=en">  <img src="includes/images/instagram.png" style="width:70px;height:70px;"></a> &nbsp;
+  <a href="https://www.behance.net/"> <img src="includes/images/behance.png" style="width:70px;height:70px;"></a> &nbsp;
+  <a href="https://github.com/"> <img src="includes/images/github.png" style="width:75px;height:75px;"></a> &nbsp;
+  <a href="https://www.google.com/intl/si/gmail/about/#"> <img src="includes/images/gmail.png" style="width:70px;height:70px;"></a> 
+  </div>
 	<div class="col-md-8" style="text-align:center;color:black;background:url(includes/images/wood.jpg);">
 		 <h2>.. Notifications ..</h2>
          <h3>
