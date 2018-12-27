@@ -1,13 +1,13 @@
 var simplemaps_worldmap_mapdata={
   main_settings: {
     //General settings
-    width: "1000", //or 'responsive'
+		width: "1000", //or 'responsive'
     background_color: "#FFFFFF",
     background_transparent: "yes",
     popups: "detect",
     
-    //State defaults
-    state_description: "State description",
+		//State defaults
+		state_description: "State description",
     state_color: "#88A4BC",
     state_hover_color: "#3B729F",
     state_url: "https://simplemaps.com",
@@ -16,8 +16,8 @@ var simplemaps_worldmap_mapdata={
     all_states_inactive: "no",
     all_states_zoomable: "no",
     
-    //Location defaults
-    location_description: "Location description",
+		//Location defaults
+		location_description: "Location description",
     location_color: "#FF0067",
     location_opacity: 0.8,
     location_hover_opacity: 1,
@@ -30,15 +30,15 @@ var simplemaps_worldmap_mapdata={
     all_locations_inactive: "no",
     all_locations_hidden: "no",
     
-    //Label defaults
-    label_color: "#ffffff",
+		//Label defaults
+		label_color: "#ffffff",
     label_hover_color: "#ffffff",
     label_size: 22,
     label_font: "Arial",
     hide_labels: "no",
    
-    //Zoom settings
-    manual_zoom: "no",
+		//Zoom settings
+		manual_zoom: "no",
     back_image: "no",
     arrow_box: "no",
     navigation_size: "40",
@@ -53,16 +53,16 @@ var simplemaps_worldmap_mapdata={
     zoom_percentage: 0.99,
     zoom_time: 0.5,
     
-    //Popup settings
-    popup_color: "white",
+		//Popup settings
+		popup_color: "white",
     popup_opacity: 0.9,
     popup_shadow: 1,
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
     
-    //Advanced settings
-    div: "map",
+		//Advanced settings
+		div: "map",
     auto_load: "yes",
     rotate: "0",
     url_new_tab: "yes",
@@ -102,7 +102,7 @@ var simplemaps_worldmap_mapdata={
     },
     AR: {
       name: "Argentina",
-      description: "Argentina is a massive South American nation with terrain encompassing Andes mountains, glacial lakes and Pampas grassland, the traditional grazing ground of its famed beef cattle. The country is famous for tango dance and music. Its big, cosmopolitan capital, Buenos Aires, is centered on the Plaza de Mayo, lined with stately 19th-century buildings including Casa Rosada, the iconic, balconied presidential palace.",
+      description: "Argentina is a massive South American nation with terrain encompassing Andes mountains, glacial lakes and Pampas grassland, the traditional grazing ground of its famed beef cattle. The country is famous for tango dance and music. Its big, cosmopolitan capital, Buenos Aires, is centered on the Plaza de Mayo, lined with stately 19th-century buildings including Casa Rosada, the iconic, balconied presidential palace",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -123,7 +123,7 @@ var simplemaps_worldmap_mapdata={
     },
     AT: {
       name: "Austria",
-      description: "Austria is a German-speaking country in Central Europe, characterized by mountain villages, baroque architecture, Imperial history and rugged Alpine terrain. Vienna, its Danube River capital, is home to the Schönbrunn and Hofburg palaces. It has counted Mozart, Strauss and Freud among its residents. The country’s other notable regions include the northern Bohemian Forest, Traunsee Lake and eastern hillside vineyards.",
+      description: "Austria is a German-speaking country in Central Europe, characterized by mountain villages, baroque architecture, Imperial history and rugged Alpine terrain. Vienna, its Danube River capital, is home to the Schönbrunn and Hofburg palaces. It has counted Mozart, Strauss and Freud among its residents. The country’s other notable regions include the northern Bohemian Forest, Traunsee Lake and eastern hillside vineyards",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -193,7 +193,7 @@ var simplemaps_worldmap_mapdata={
     },
     BY: {
       name: "Belarus",
-      description: "Belarus, a landlocked country in Eastern Europe, is known for its Stalinist architecture, grand fortifications and primeval forests. In the modern capital, Minsk, the monumental KGB Headquarters loom over Independence Square, while the Museum of the Great Patriotic War commemorates the country’s role in WWII. The capital is also home to many churches, including the neo-Romanesque Church of Saints Simon and Helena.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -228,7 +228,7 @@ var simplemaps_worldmap_mapdata={
     },
     BT: {
       name: "Bhutan",
-      description: "Bhutan, a Buddhist kingdom on the Himalayas’ eastern edge, is known for its monasteries, fortresses (or dzongs) and dramatic landscapes that range from subtropical plains to steep mountains and valleys. In the High Himalayas, peaks such as 7,326m Jomolhari are popular trekking destinations. Paro Taktsang monastery (also known as Tiger’s Nest) clings to cliffs above the forested Paro Valley.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -291,7 +291,7 @@ var simplemaps_worldmap_mapdata={
     },
     CD: {
       name: "Democratic Republic of the Congo",
-      description: "The Democratic Republic of the Congo, also known as DR Congo, the DRC, Congo-Kinshasa, or simply the Congo, is the southernmost country located in Central Africa. It is sometimes referred to by its former name of Zaire, which was its official name between 1971 and 1997. ",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -305,7 +305,7 @@ var simplemaps_worldmap_mapdata={
     },
     CO: {
       name: "Colombia",
-      description: "Colombia is a country at the northern tip of South America. It's landscape is marked by rainforests, Andes mountains and numerous coffee plantations. In the high-altitude capital, Bogotá, the Zona Rosa district is known for its restaurants and shops. Cartagena, on the Caribbean coast, has a walled colonial Old Town, a 16th-century castle and nearby coral reefs.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -319,7 +319,7 @@ var simplemaps_worldmap_mapdata={
     },
     CU: {
       name: "Cuba",
-      description: "Cuba is a Caribbean island nation under communist rule. It has sugar-white beaches and is dotted with tobacco fields, which play a part in the production of the country's legendary cigars. The capital, Havana, is lined with pastel houses, 1950s-era cars and Spanish-colonial architecture in the 16th-century core, Old Havana. Salsa music plays in the dance clubs and cabaret shows are performed at the famed Tropicana.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -333,7 +333,7 @@ var simplemaps_worldmap_mapdata={
     },
     DE: {
       name: "Germany",
-      description: "Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank",
+      description: "Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -473,7 +473,7 @@ var simplemaps_worldmap_mapdata={
     },
     GR: {
       name: "Greece",
-      description: "Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. Athens, its capital, retains landmarks including the 5th-century B.C. Acropolis citadel with the Parthenon temple. Greece is also known for its beaches, from the black sands of Santorini to the party resorts of Mykonos",
+      description: "Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. Athens, its capital, retains landmarks including the 5th-century B.C. Acropolis citadel with the Parthenon temple. Greece is also known for its beaches, from the black sands of Santorini to the party resorts of Mykonos.",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -543,63 +543,63 @@ var simplemaps_worldmap_mapdata={
     },
     IE: {
       name: "Ireland",
-      description: "Ireland is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles, the third-largest in Europe, and the twentieth-largest on Earth.",
+      description: "Ireland is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles, the third-largest in Europe, and the twentieth-largest on Earth",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     IR: {
       name: "Iran",
-      description: "Iran, also called Persia and officially known as the Islamic Republic of Iran, is a country in Western Asia. With over 81 million inhabitants, Iran is the world's 18th most populous country. Comprising a land area of 1,648,195 km², it is the second largest country in the Middle East and the 17th largest in the world. ",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     IQ: {
       name: "Iraq",
-      description: "Iraq, officially known as the Republic of Iraq, is a country in Western Asia, bordered by Turkey to the north, Iran to the east, Kuwait to the southeast, Saudi Arabia to the south, Jordan to the southwest and Syria to the west. The capital, and largest city, is Baghdad.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     IS: {
       name: "Iceland",
-      description: "Iceland, a Nordic island nation, is defined by its dramatic landscape with volcanoes, geysers, hot springs and lava fields. Massive glaciers are protected in Vatnajökull and Snæfellsjökull national parks. Most of the population lives in the capital, Reykjavik, which runs on geothermal power and is home to the National and Saga museums, tracing Iceland’s Viking history.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     IL: {
       name: "Israel",
-      description: "Israel, a Middle Eastern country on the Mediterranean Sea, is regarded by Jews, Christians and Muslims as the biblical Holy Land. Its most sacred sites are in Jerusalem. Within its Old City, the Temple Mount complex includes the Dome of the Rock shrine, the historic Western Wall, Al-Aqsa Mosque and the Church of the Holy Sepulchre. Israel's financial hub, Tel Aviv, is known for its Bauhaus architecture and beaches.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     IT: {
       name: "Italy",
-      description: "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s "David" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.",
+      description: "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. ", 
       color: "default",
       hover_color: "default",
       url: "default"
     },
     JM: {
       name: "Jamaica",
-      description: "Jamaica, a Caribbean island nation, has a lush topography of mountains, rainforests and reef-lined beaches. Many of its all-inclusive resorts are clustered in Montego Bay, with its British-colonial architecture, and Negril, known for its diving and snorkeling sites. Jamaica is famed as the birthplace of reggae music, and its capital Kingston is home to the Bob Marley Museum, dedicated to the famous singer.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     JO: {
       name: "Jordan",
-      description: "Jordan, an Arab nation on the east bank of the Jordan River, is defined by ancient monuments, nature reserves and seaside resorts. It’s home to the famed archaeological site of Petra, the Nabatean capital dating to around 300 B.C. Set in a narrow valley with tombs, temples and monuments carved into the surrounding pink sandstone cliffs, Petra earns its nickname, the "Rose City."",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     JP: {
       name: "Japan",
-      description: "Japan is an island nation in the Pacific Ocean with dense cities, imperial palaces, mountainous national parks and thousands of shrines and temples. Shinkansen bullet trains connect the main islands of Kyushu (with Okinawa's subtropical beaches), Honshu (home to Tokyo and Hiroshima’s atomic-bomb memorial) and Hokkaido (famous for skiing). Tokyo, the capital, is known for skyscrapers, shopping and pop culture.",
+      description: "apan is an island nation in the Pacific Ocean with dense cities, imperial palaces, mountainous national parks and thousands of shrines and temples. Shinkansen bullet trains connect the main islands of Kyushu (with Okinawa's subtropical beaches), Honshu (home to Tokyo and Hiroshima’s atomic-bomb memorial) and Hokkaido (famous for skiing). Tokyo, the capital, is known for skyscrapers, shopping and pop culture.",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -627,7 +627,7 @@ var simplemaps_worldmap_mapdata={
     },
     KH: {
       name: "Cambodia",
-      description: "Cambodia is a Southeast Asian nation whose landscape spans low-lying plains, the Mekong Delta, mountains and Gulf of Thailand coastline. Phnom Penh, its capital, is home to the art deco Central Market, glittering Royal Palace and the National Museum's historical and archaeological exhibits. In the country's northwest are the ruins of Angkor Wat, a massive stone temple complex built during the Khmer Empire.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -676,7 +676,7 @@ var simplemaps_worldmap_mapdata={
     },
     LY: {
       name: "Libya",
-      description: "Libya, officially the State of Libya, is a country in the Maghreb region in North Africa, bordered by the Mediterranean Sea to the north, Egypt to the east, Sudan to the southeast, Chad and Niger to the south and Algeria and Tunisia to the west.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -739,7 +739,7 @@ var simplemaps_worldmap_mapdata={
     },
     MX: {
       name: "Mexico",
-      description: "Mexico is a country between the U.S. and Central America that's known for its Pacific and Gulf of Mexico beaches and its diverse landscape of mountains, deserts and jungles. Ancient ruins such as Teotihuacán and the Mayan city of Chichén Itzá are scattered throughout the country, as are Spanish colonial-era towns. In capital Mexico City, upscale shops, renowned museums and gourmet restaurants cater to modern life.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -760,7 +760,7 @@ var simplemaps_worldmap_mapdata={
     },
     MM: {
       name: "Myanmar",
-      description: "Myanmar (formerly Burma) is a Southeast Asian nation of more than 100 ethnic groups, bordering India, Bangladesh, China, Laos and Thailand. Yangon (formerly Rangoon), the country's largest city, is home to bustling markets, numerous parks and lakes, and the towering, gilded Shwedagon Pagoda, which contains Buddhist relics and dates to the 6th century.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -823,7 +823,7 @@ var simplemaps_worldmap_mapdata={
     },
     NG: {
       name: "Nigeria",
-      description: "Nigeria, an African country on the Gulf of Guinea, has many natural landmarks and wildlife reserves. Protected areas such as Cross River National Park and Yankari National Park have waterfalls, dense rainforest, savanna and rare primate habitats. One of the most recognizable sites is Zuma Rock, a 725m-tall monolith outside the capital of Abuja that’s pictured on the national currency.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -837,28 +837,28 @@ var simplemaps_worldmap_mapdata={
     },
     NL: {
       name: "Netherlands",
-      description: "The Netherlands, a country in northwestern Europe, is known for a flat landscape of canals, tulip fields, windmills and cycling routes. Amsterdam, the capital, is home to the Rijksmuseum, Van Gogh Museum and the house where Jewish diarist Anne Frank hid during WWII. Canalside mansions and a trove of works from artists including Rembrandt and Vermeer remain from the city's 17th-century "Golden Age."",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     NO: {
       name: "Norway",
-      description: "Norway is a Scandinavian country encompassing mountains, glaciers and deep coastal fjords. Oslo, the capital, is a city of green spaces and museums. Preserved 9th-century Viking ships are displayed at Oslo’s Viking Ship Museum. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing, notably at Lillehammer’s Olympic resort.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     NP: {
       name: "Nepal",
-      description: "Nepal, officially the Federal Democratic Republic of Nepal, is a landlocked country in South Asia. It is located mainly in the Himalayas but also includes parts of the Indo-Gangetic Plain. With an estimated population of 26.4 million, it is 48th largest country by population and 93rd largest country by area.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     NZ: {
       name: "New Zealand",
-      description: "New Zealand is a country in the southwestern Pacific Ocean consisting of 2 main islands, both marked by volcanoes and glaciation. Capital Wellington, on the North Island, is home to Te Papa Tongarewa, the expansive national museum. Wellington’s dramatic Mt. Victoria, along with the South Island’s Fiordland and Southern Lakes, stood in for mythical Middle Earth in Peter Jackson’s "Lord of the Rings" films.",
+      description: "New Zealand is a country in the southwestern Pacific Ocean consisting of 2 main islands, both marked by volcanoes and glaciation. Capital Wellington, on the North Island, is home to Te Papa Tongarewa, the expansive national museum.",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -872,7 +872,7 @@ var simplemaps_worldmap_mapdata={
     },
     PK: {
       name: "Pakistan",
-      description: "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia. It is the world’s sixth-most populous country with a population exceeding 212,742,631 people. In area, it is the 33rd-largest country, spanning 881,913 square kilometres. ",
+      description: "Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia. It is the world’s sixth-most populous country with a population exceeding 212,742,631 people. In area, it is the 33rd-largest country, spanning 881,913 square kilometres.",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -893,35 +893,35 @@ var simplemaps_worldmap_mapdata={
     },
     PH: {
       name: "Philippines",
-      description: "The Philippines is a Southeast Asian country in the Western Pacific, comprising more than 7,000 islands. Its capital, Manila, is famous for its waterfront promenade and centuries-old Chinatown, Binondo. Intramuros, a walled city in colonial times, is the heart of Old Manila.",
+      description: "The Philippines is a Southeast Asian country in the Western Pacific, comprising more than 7,000 islands. Its capital, Manila, is famous for its waterfront promenade and centuries-old Chinatown, Binondo. Intramuros, a walled city in colonial times, is the heart of Old Manila. It’s home to the baroque 17th-century San Agustin Church as well as Fort Santiago, a storied citadel and military prison.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     PG: {
       name: "Papua New Guinea",
-      description: "Papua New Guinea, in the southwestern Pacific, encompasses the eastern half of New Guinea and its offshore islands. A country of immense cultural and biological diversity, it’s known for its beaches and coral reefs. Inland are active volcanoes, granite Mt. Wilhelm, dense rainforest and hiking routes like the Kokoda Trail. There are also traditional tribal villages, many with their own languages.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     PL: {
       name: "Poland",
-      description: "Poland, officially the Republic of Poland, is a country located in Central Europe. It is divided into 16 administrative subdivisions, covering an area of 312,696 square kilometres, and has a largely temperate seasonal climate.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     KP: {
       name: "Dem. Rep. Korea",
-      description: "North Korea, officially the Democratic People's Republic of Korea is a country in East Asia constituting the northern part of the Korean Peninsula",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     PT: {
       name: "Portugal",
-      description: "Portugal is a southern European country on the Iberian Peninsula, bordering Spain. Its location on the Atlantic Ocean has influenced many aspects of its culture: salt cod and grilled sardines are national dishes, the Algarve's beaches are a major destination and much of the nation’s architecture dates to the 1500s–1800s, when Portugal had a powerful maritime empire.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -977,7 +977,7 @@ var simplemaps_worldmap_mapdata={
     },
     SA: {
       name: "Saudi Arabia",
-      description: "Saudi Arabia is a desert country encompassing most of the Arabian Peninsula, with Red Sea and Persian (Arabian) Gulf coastlines. Known as the birthplace of Islam, it’s home to the religion’s 2 most sacred mosques: Masjid al-Haram, in Mecca, destination of the annual Hajj pilgrimage, and Medina’s Masjid an-Nabawi, burial site of the prophet Muhammad. Riyadh, the capital, is a skyscraper-filled metropolis",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -1054,14 +1054,14 @@ var simplemaps_worldmap_mapdata={
     },
     SZ: {
       name: "Swaziland",
-      description: "Swaziland, a small, landlocked monarchy in southern Africa, is known for its wilderness reserves and festivals showcasing traditional Swazi culture. Marking its northeastern border with Mozambique and stretching down to South Africa, the Lebombo Mountains are a backdrop for Mlawula Nature Reserve’s many hiking trails. Nearby Hlane Royal National Park is home to diverse wildlife including lions, hippos and elephants.",
+      description: "dSwaziland, a small, landlocked monarchy in southern Africa, is known for its wilderness reserves and festivals showcasing traditional Swazi culture. Marking its northeastern border with Mozambique and stretching down to South Africa, the Lebombo Mountains are a backdrop for Mlawula Nature Reserve’s many hiking trails. Nearby Hlane Royal National Park is home to diverse wildlife including lions, hippos and elephants.",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     SY: {
       name: "Syria",
-      description: "Syria, officially the Syrian Arab Republic, is a country in Western Asia, bordering Lebanon and the Mediterranean Sea to the west, Turkey to the north, Iraq to the east, Jordan to the south, and Israel to the southwest.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -1117,14 +1117,14 @@ var simplemaps_worldmap_mapdata={
     },
     TR: {
       name: "Turkey",
-      description: "Turkey is a nation straddling eastern Europe and western Asia with cultural connections to ancient Greek, Persian, Roman, Byzantine and Ottoman empires. Cosmopolitan Istanbul, on the Bosphorus Strait, is home to the iconic Hagia Sophia, with its soaring dome and Christian mosaics, the massive 17th-century Blue Mosque and the circa-1460 Topkapı Palace, former home of sultans. Ankara is Turkey’s modern capital.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     TW: {
       name: "Taiwan",
-      description: "Taiwan, officially the Republic of China, is a state in East Asia. Its neighbors include the People's Republic of China to the west, Japan to the northeast, and the Philippines to the south. It is the most populous state and largest economy that is not a member of the United Nations.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -1215,14 +1215,14 @@ var simplemaps_worldmap_mapdata={
     },
     ZW: {
       name: "Zimbabwe",
-      description: "Zimbabwe is a landlocked country in southern Africa known for its dramatic landscape and diverse wildlife, much of it within parks, reserves and safari areas. On the Zambezi River, Victoria Falls make a thundering 108m drop into narrow Batoka Gorge, where there’s white-water rafting and bungee-jumping. Downstream are Matusadona and Mana Pools national parks, home to hippos, rhinos and birdlife.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
     },
     SO: {
       name: "Somalia",
-      description: "Somalia, officially the Federal Republic of Somalia, is a country with its territory located in the Horn of Africa. It is bordered by Ethiopia to the west, Djibouti to the northwest, the Gulf of Aden to the north, the Guardafui Channel and Indian Ocean to the east, and Kenya to the southwest.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -1278,7 +1278,7 @@ var simplemaps_worldmap_mapdata={
     },
     BS: {
       name: "Bahamas",
-      description: "The Bahamas is a coral-based archipelago in the Atlantic Ocean. Its 700-plus islands and cays range from uninhabited to packed with resorts. The northernmost, Grand Bahama, and Paradise Island, home to many large-scale hotels, are among the best known. Scuba diving and snorkeling sites include the massive Andros Barrier Reef, Thunderball Grotto (used in James Bond films) and the black-coral gardens off Bimini.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -1348,7 +1348,7 @@ var simplemaps_worldmap_mapdata={
     },
     HK: {
       name: "Hong Kong",
-      description: "Hong Kong is an autonomous territory, and former British colony, in southeastern China. Its vibrant, densely populated urban centre is a major port and global financial hub with a skyscraper-studded skyline. Central (the business district) features architectural landmarks like I.M. Pei’s Bank of China Tower. Hong Kong is also a major shopping destination, famed for bespoke tailors and Temple Street Night Market.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -1446,7 +1446,7 @@ var simplemaps_worldmap_mapdata={
     },
     SG: {
       name: "Singapore",
-      description: "Singapore, an island city-state off southern Malaysia, is a global financial center with a tropical climate and multicultural population. Its colonial core centers on the Padang, a cricket field since the 1830s and now flanked by grand buildings such as City Hall, with its 18 Corinthian columns. In Singapore's circa-1820 Chinatown stands the red-and-gold Buddha Tooth Relic Temple, said to house one of Buddha's teeth.",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -1523,7 +1523,7 @@ var simplemaps_worldmap_mapdata={
     },
     CY: {
       name: "Cyprus",
-      description: "Cyprus, officially the Republic of Cyprus, is an island country in the Eastern Mediterranean and the third largest and third most populous island in the Mediterranean, located south of Turkey, west of Syria and Lebanon, northwest of Israel, north of Egypt, and southeast of Greece",
+      description: "default",
       color: "default",
       hover_color: "default",
       url: "default"
@@ -1577,7 +1577,7 @@ var simplemaps_worldmap_mapdata={
       lat: "48.866666670",
       lng: "2.333333333",
       color: "default",
-      description: "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.",
+      description: "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré",
       url: "default"
     },
     "1": {
@@ -1600,5 +1600,3 @@ var simplemaps_worldmap_mapdata={
   },
   labels: {}
 };
-    
-    
