@@ -59,12 +59,5 @@ if ($conn->query($sql2) === TRUE) {
 $conn->close();
 
 
-
-
-	
-	
-	
-	
-	
 //ob_flush();
 ?>

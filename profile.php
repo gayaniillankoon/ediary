@@ -1,23 +1,97 @@
 <?php 
 session_start(); // start the session
-    
+require_once('db_access.php');
+
+$db_acc=db_con::db_access();
     
     if (!isset($_SESSION ['uname'])){ // check the username 
       header("location:index.php");
       
-    }
-    
-    else{//go to the logout.php page when clicking
+    }else{
       $lgout= "<a href=index.php>Logout </a>";
     }
 
-   
+
+    function uploadImages()
+    {
+        $ds = DIRECTORY_SEPARATOR;  //1
+        $storeFolder = 'uploads';   //2
+        if (!empty($_FILES)) {
+            $tempFile = $_FILES['files']['tmp_name'];
+            $file_name = $_FILES['files']['name'];
+            $ext = pathinfo($file_name, PATHINFO_EXTENSION);
+
+            if (filesize($tempFile) > 5000000) {
+                echo 'FAILED';
+                die();
+            }
+
+            if ($ext == 'jpg' || $ext == 'png' || $ext == 'JPG' || $ext == 'PNG') {
+                $new_file_name = time() . '.' . $ext;
+                $targetPath = 'includes' . $ds . $storeFolder . $ds;  //4
+                $targetFile = $targetPath . $new_file_name;  //5
+
+                if ($img = @imagecreatefromstring(file_get_contents($tempFile))) {
+                    $upload_result = move_uploaded_file($tempFile, $targetFile); //6
+                    echo $new_file_name;
+                } else {
+                    echo 'FAILED';
+                }
+            } else {
+                echo 'FAILED';
+            }
+        }
+
+    }
+
+    if(isset($_POST['save_picture'])){
+
+
+
+        $profile_image = $_POST['profile_image'];
+
+        $username=$_SESSION['uname'];
+
+
+        $sql2 = "UPDATE users SET 
+		avatar = '$profile_image'
+		WHERE username = '$username'";
+
+        if ($conn->query($sql2) === TRUE) {
+            //echo "New record created successfully";
+            header("location: ./profile.php");
+        } else {
+            echo "Error: " . $sql2 . "<br>" . $conn->error;
+            header("location: ./profile.php");
+        }
+
+        $conn->close();
+
+    }
+
+
+    if(isset($_GET['f'])){
+        if(function_exists($_GET['f'])) {
+            $_GET['f']();
+        }
+    }
+
+$username=$_SESSION['uname'];
+
+$sql = "SELECT * FROM users WHERE username='$username'";
+
+$result= mysqli_query($conn,$sql) or die(mysqli_error($conn));
+
+$user_details = [];
+
+if($rec = mysqli_fetch_assoc($result))
+{
+    $user_details = $rec;
+}
               //echo $_SESSION['uname']; 
               //echo $lgout; 
 
 ?>
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -27,6 +101,9 @@ session_start(); // start the session
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="includes/image-uploader/css/style.css">
+    <link rel="stylesheet" href="includes/image-uploader/css/jquery.fileupload.css">
 </head>
 <body background="includes/images/i.jpg" style ="background-position: center;
                                                  background-repeat: no-repeat;
@@ -224,7 +301,6 @@ $nor = mysqli_num_rows($result);
 if($nor>0)
 {
 ?>
-
 <?php
 	
 	while($rec = mysqli_fetch_array($result, MYSQL_ASSOC))
@@ -285,21 +361,102 @@ if($nor>0)
 
 
     </div>
-    <div class="col-sm-5">
-       <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwdetails">
-        Add Details
-       </button>
-       <button type="button" class="btn btn-info" data-toggle="modal" data-target="#nwdetails">
-        Edit Details
-       </button>
-       <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#nwdetails">
-        Delete Details
-       </button>   
-  
-    </div>
+
+      <div class="row">
+
+          <div class="col-sm-5">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwdetails">
+                  Add Details
+              </button>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#nwdetails">
+                  Edit Details
+              </button>
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#nwdetails">
+                  Delete Details
+              </button>
+
+          </div>
+
+
+          <div class="col-md-4">
+              <div class="form-group">
+                  <label>Update Profile Picture</label>
+                  <br>
+                  <br>
+                  <div id="img_prev_sec1" style="height: 150px; width:100%; background: url('includes/uploads/<?php if(isset($user_details['avatar'])){echo $user_details['avatar']; } ?>'); background-size: cover;"></div>
+              <br>
+                  <form action="profile.php" method="post">
+                      <div class="form-group">
+                          <!-- The fileinput-button span is used to style the file input field as button -->
+                          <span class="btn btn-success fileinput-button">
+                            <i class="glyphicon glyphicon-plus"></i>
+                            <span>Select file...</span>
+                            <!-- The file input field used as target for the file upload widget -->
+                            <input id="fileupload_sec1" type="file" name="files" multiple>
+                        </span>
+                          <br>
+                          <br>
+                          <!-- The global progress bar -->
+                          <div id="progress_sec1" class="progress">
+                              <div class="progress-bar progress-bar-success"></div>
+                          </div>
+                          <!-- The container for the uploaded files -->
+                          <div id="files_sec1" class="files"></div>
+                          <input type="text" name="profile_image" id="section1_image" value="<?php if(isset($user_details['avatar'])){echo $user_details['avatar']; } ?>" hidden>
+                          <br>
+                      </div>
+                      <button type="submit" name="save_picture" class="btn btn-success">Save</button>
+                  </form>
+              <script>
+                  /*jslint unparam: true */
+                  /*global window, $ */
+                  $(function () {
+                      'use strict';
+                      // Change this to the location of your server-side upload handler:
+                      var url = 'profile.php?f=uploadImages';
+                      $('#fileupload_sec1').fileupload({
+                          url: url,
+                          dataType: 'html',
+                          done: function (e, data) {
+
+                              var fileNameNew = data['result'].substring(0, data['result'].indexOf("<"));
+
+                              console.log(fileNameNew);
+
+                              $('#section1_image').val(fileNameNew);
+
+                              $('#img_prev_sec1').css("background-image", "url(includes/uploads/" +fileNameNew+  ")");
+
+
+                              $.each(data.result.files, function (index, file) {
+                                  $('<p/>').text(file.name).appendTo('#files');
+                              });
+                          },
+                          progressall: function (e, data) {
+                              var progress = parseInt(data.loaded / data.total * 100, 10);
+                              $('#progress_sec1 .progress-bar').css(
+                                  'width',
+                                  progress + '%'
+                              );
+                          }
+                      }).prop('disabled', !$.support.fileInput)
+                          .parent().addClass($.support.fileInput ? undefined : 'disabled');
+                  });
+              </script>
+
+          </div>
+
+      </div>
+      </div>
+
+
+
+
   </div>
 </div>
 
-
+<script src="includes/image-uploader/js/vendor/jquery.ui.widget.js"></script>
+<script src="includes/image-uploader/js/jquery.iframe-transport.js"></script>
+<script src="includes/image-uploader/js/jquery.fileupload.js"></script>
 </body>
 </html>
