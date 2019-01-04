@@ -53,7 +53,7 @@ session_start(); // start the session
       <div class="col-md-4"></div>
     </div><br>
     
-    <div id="map"></div>
+    <div id="map" style="margin-bottom: 100px;margin-right: 100px;margin-left: 100px;"></div>
      
     
     <script>
@@ -99,7 +99,7 @@ session_start(); // start the session
       }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOLJIHcdHbG8I01-Fb50hoIft1IL2BsYI&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbguQG9Btwjace45tN5WtZdWKo8lXZOLI&callback=initMap">
     </script>
   </body>
 </html>

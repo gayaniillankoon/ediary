@@ -66,8 +66,7 @@ session_start(); // start the session
 <div class="row"><div class="col-md-12"></div></div>
 <div class="row"><div class="col-md-12"></div></div>
 <div class="row">
-<div class="col-md-3">
-</div>
+<div class="col-md-3"></div>
 <div class="col-md-6" align="center">
     <form action="" name="calculator">
         <input type="text" name="screen" disabled>
@@ -96,12 +95,9 @@ session_start(); // start the session
         <input type="button" value="." onclick="calculator.screen.value +='.'">
         <input type="button" value="=" onclick="calculator.screen.value = eval(calculator.screen.value)">
         <input type="button" value="/" onclick="calculator.screen.value +='/'"><br>
-        
-        
     </form>
 </div>
-<div class="col-md-3">
-</div>
+<div class="col-md-3"></div>
 </div>
       
 </body>

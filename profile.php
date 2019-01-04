@@ -92,6 +92,7 @@ if($rec = mysqli_fetch_assoc($result))
               //echo $lgout; 
 
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -99,8 +100,8 @@ if($rec = mysqli_fetch_assoc($result))
 <title>EDIARY</title>
 <link href="includes/css/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="includes/image-uploader/css/style.css">
     <link rel="stylesheet" href="includes/image-uploader/css/jquery.fileupload.css">
@@ -283,12 +284,10 @@ if($rec = mysqli_fetch_assoc($result))
    
 
   <div class="row">
-  <div class="col-sm-1">
-    
-    </div>
- <div class="col-sm-6">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-6">
        
-       <?php
+<?php
 require_once 'db_access.php';
 $db_acc=db_con::db_access();
 
@@ -359,28 +358,13 @@ if($nor>0)
 ?>
 
 
-
-    </div>
+  </div>
 
       <div class="row">
 
-          <div class="col-sm-5">
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwdetails">
-                  Add Details
-              </button>
-              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#nwdetails">
-                  Edit Details
-              </button>
-              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#nwdetails">
-                  Delete Details
-              </button>
-
-          </div>
-
-
-          <div class="col-md-4">
+          <div class="col-md-11">
               <div class="form-group">
-                  <label>Update Profile Picture</label>
+                  <label><b>Update Profile Picture</b></label>
                   <br>
                   <br>
                   <div id="img_prev_sec1" style="height: 150px; width:100%; background: url('includes/uploads/<?php if(isset($user_details['avatar'])){echo $user_details['avatar']; } ?>'); background-size: cover;"></div>
@@ -444,16 +428,26 @@ if($nor>0)
                   });
               </script>
 
+           </div>
+
+           <br><br><br>
+           <div class="row">
+           	<div class="col-md-12">
+           	  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwdetails">
+                  Add Details
+              </button> 
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#nwdetails">
+                  Edit
+              </button>
+              <button type="button" class="btn btn-danger"><a href="delprofile.php?profile_id={$rec['id']}\" onclick=\"return confirm('Delete the details?');\">Delete</a> 
+              </button>
+           </div>
           </div>
+          </div>
+          <div class="col-md-1"></div>
 
+      
       </div>
-      </div>
-
-
-
-
-  </div>
-</div>
 
 <script src="includes/image-uploader/js/vendor/jquery.ui.widget.js"></script>
 <script src="includes/image-uploader/js/jquery.iframe-transport.js"></script>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 25, 2018 at 04:41 AM
+-- Generation Time: Jan 04, 2019 at 08:05 AM
 -- Server version: 5.1.53
 -- PHP Version: 5.3.4
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `notes` (
   `note` varchar(255) NOT NULL,
   `user` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
 
 --
 -- Dumping data for table `notes`
@@ -46,7 +46,14 @@ INSERT INTO `notes` (`id`, `date`, `note`, `user`) VALUES
 (6, '2018-12-18', ' hhhhhhhhhhhhhhhhh', 'gayanilakshi101@gmai'),
 (7, '2018-12-12', ' ', 'gayanilakshi101@gmai'),
 (8, '2018-12-22', ' ghfh', 'gayanilakshi101@gmai'),
-(9, '0000-00-00', ' SSSDFDFSSFSD', 'rashila@gmail.com');
+(9, '0000-00-00', ' SSSDFDFSSFSD', 'rashila@gmail.com'),
+(10, '2018-12-26', ' gggghh', 'gayanilakshi101@gmai'),
+(13, '2018-12-18', 'Today is the best day no avvd', 'demo@demo.com'),
+(14, '2018-12-20', 'Sonali hello ghffhhhhhhhhgjjjjjjjjjjjjjjjj jhhhhhhhhhhhhh', 'demo@demo.com'),
+(15, '2018-12-26', 'Today is the best we want to', 'demo@demo.com'),
+(16, '2018-12-27', ' httgchgcgxnnncxcnbcnbcncnnc', 'demo@demo.com'),
+(17, '2018-12-27', 'Hi good morning friend', 'demo@demo.com'),
+(19, '2019-01-04', 'Hello how are you gg', 'demo@demo.com');
 
 -- --------------------------------------------------------
 
@@ -63,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `tbl_contacts` (
   `email` varchar(25) NOT NULL,
   `user` varchar(25) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `tbl_contacts`
@@ -71,27 +78,9 @@ CREATE TABLE IF NOT EXISTS `tbl_contacts` (
 
 INSERT INTO `tbl_contacts` (`id`, `name`, `mobile1`, `mobile2`, `home`, `email`, `user`) VALUES
 (1, 'Gayani', 987, 9876, 999, 'Gayani@gmail.com', 'gayanilakshi101@gmail.com'),
-(2, 'jhhhhhhhhhhhhhhhhh', 0, 0, 0, '', 'rashila@gmail.com');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_events`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_events` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) NOT NULL,
-  `start` datetime NOT NULL,
-  `end` datetime NOT NULL,
-  `user` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
---
--- Dumping data for table `tbl_events`
---
-
+(2, 'jhhhhhhhhhhhhhhhhh', 0, 0, 0, '', 'rashila@gmail.com'),
+(6, 'nayani', 9876666, 2147483647, 2147483647, 'Gayani@gmail.com', 'demo@demo.com'),
+(7, 'thilini', 98, -2147483648, 876543, 'dnmadhuwantha@gmail.com', 'demo@demo.com');
 
 -- --------------------------------------------------------
 
@@ -104,32 +93,34 @@ CREATE TABLE IF NOT EXISTS `users` (
   `fullname` varchar(40) NOT NULL,
   `username` varchar(25) NOT NULL,
   `password` varchar(25) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `address` varchar(100) NOT NULL,
-  `birth` date NOT NULL,
-  `tel` varchar(50) NOT NULL,
-  `mobile` varchar(50) NOT NULL,
-  `businessaddress` varchar(100) NOT NULL,
-  `telb` varchar(50) NOT NULL,
-  `fax` varchar(50) NOT NULL,
-  `emailb` varchar(50) NOT NULL,
-  `religion` varchar(50) NOT NULL,
-  `ID` varchar(50) NOT NULL,
-  `dl` varchar(50) NOT NULL,
-  `passport` varchar(50) NOT NULL,
-  `blood` varchar(50) NOT NULL,
-  `bank` varchar(50) NOT NULL,
-  `acc` varchar(50) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `birth` date DEFAULT NULL,
+  `tel` varchar(50) DEFAULT NULL,
+  `mobile` varchar(50) DEFAULT NULL,
+  `businessaddress` varchar(100) DEFAULT NULL,
+  `telb` varchar(50) DEFAULT NULL,
+  `fax` varchar(50) DEFAULT NULL,
+  `emailb` varchar(50) DEFAULT NULL,
+  `religion` varchar(50) DEFAULT NULL,
+  `ID` varchar(50) DEFAULT NULL,
+  `dl` varchar(50) DEFAULT NULL,
+  `passport` varchar(50) DEFAULT NULL,
+  `blood` varchar(50) DEFAULT NULL,
+  `bank` varchar(50) DEFAULT NULL,
+  `acc` varchar(50) DEFAULT NULL,
+  `avatar` varchar(255) DEFAULT NULL,
   `user` varchar(40) NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `fullname`, `username`, `password`, `name`, `address`, `birth`, `tel`, `mobile`, `businessaddress`, `telb`, `fax`, `emailb`, `religion`, `ID`, `dl`, `passport`, `blood`, `bank`, `acc`, `user`) VALUES
-(1, 'Gayani Illankoon', 'gayanilakshi101@gmail.com', '1996imnti', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(2, 'yashoda lakmini', 'yashoda@gmail.cpm', 'yashoda', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(3, 'rashila', 'rashila@gmail.com', 'rashila', 'Gayani and tharindu', 'qweqweqweqweqe', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(4, '', '', '', 'Gayani', 'Das', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', 'rashila@gmail.com');
+INSERT INTO `users` (`user_id`, `fullname`, `username`, `password`, `name`, `address`, `birth`, `tel`, `mobile`, `businessaddress`, `telb`, `fax`, `emailb`, `religion`, `ID`, `dl`, `passport`, `blood`, `bank`, `acc`, `avatar`, `user`) VALUES
+(2, 'yashoda lakmini', 'yashoda@gmail.cpm', 'yashoda', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, ''),
+(3, 'rashila', 'rashila@gmail.com', 'rashila', 'Gayani and tharindu', 'qweqweqweqweqe', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, ''),
+(4, '', '', '', 'Gayani', 'Das', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, 'rashila@gmail.com'),
+(5, 'nayani illankoon', 'nayani@gmail.com', 'nayani', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, ''),
+(6, 'Tharindu lakshitha', 'demo@demo.com', 'demodemo', 'tharindu', 'galla,hvhfhffh,hhh', '2018-12-18', '09876543', '098765432', 'dfghjjkk', '34456788', '', '', '', '', '', '', '', '', '', '1546581373.jpg', 'demo@demo.com');

@@ -102,21 +102,21 @@ session_start(); // start the session
 
   <div class="row">
 
-    <div class="col-sm-12">
+  <div class="col-sm-12">
        
        <?php
-require_once 'db_access.php';
-$db_acc=db_con::db_access();
+         require_once 'db_access.php';
+         $db_acc=db_con::db_access();
 
-$user = $_SESSION['uname'];
-$sql = "SELECT id, name, mobile1, mobile2, home,email FROM tbl_contacts WHERE user='$user' ORDER BY id DESC";
+         $user = $_SESSION['uname'];
+         $sql = "SELECT id, name, mobile1, mobile2, home,email FROM tbl_contacts WHERE user='$user' ORDER BY id DESC";
 
-$result= mysqli_query($conn,$sql) or die(mysqli_error($conn));
+         $result= mysqli_query($conn,$sql) or die(mysqli_error($conn));
 
-$nor = mysqli_num_rows($result);
-if($nor>0)
-{
-?>
+         $nor = mysqli_num_rows($result);
+         if($nor>0)
+        {
+       ?>
 
 
 
