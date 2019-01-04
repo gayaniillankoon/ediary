@@ -82,7 +82,7 @@ $sql = "SELECT * FROM users WHERE username='$username'";
 
 $result= mysqli_query($conn,$sql) or die(mysqli_error($conn));
 
-$user_details = [];
+//$user_details = [];
 
 if($rec = mysqli_fetch_assoc($result))
 {

@@ -16,9 +16,7 @@
             <a class="nav-link" href="findlocation.php">My Location</a>
         </li>
         <li class="<?php if($page=='profile'){echo 'active';}?>">
-            <a class="navbar-brand" href="profile.php">
-                <img src="includes/images/avatar.png" alt="Logo" style="width:40px;">
-            </a>
+            <a class="nav-link" href="profile.php">My Profile</a>
         </li>
         <li class="<?php if($page=='logout'){echo 'active';}?>">
             <a class="nav-link" href="logout.php">Logout</a>

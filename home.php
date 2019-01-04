@@ -62,17 +62,17 @@ session_start(); // start the session
 
 <div class="row">
 	<div class="col-md-4" style="background-color:white; height:400px;">
-   &nbsp;<h2><img src="includes/images/network.png" style="width:120px;height:120px;"><b><i>Connect</i></b></h2>
-   &nbsp;<a href="https://www.facebook.com/"> <img src="includes/images/facebook.png" style="width:70px;height:70px;"></a> &nbsp;
-  <a href="https://plus.google.com/discover"> <img src="includes/images/google-plus.png" style="width:70px;height:70px;"></a> &nbsp;
-  <a href="https://www.linkedin.com/">  <img src="includes/images/linkedin.png" style="width:70px;height:70px;"></a> &nbsp;
-  <a href="https://www.skype.com/en/"> <img src="includes/images/skype.png" style="width:70px;height:70px;"></a> &nbsp;
-  <a href="https://www.tumblr.com/"> <img src="includes/images/tumblr.png" style="width:70px;height:70px;"></a> <br><br>
-   &nbsp;<a href="https://twitter.com/login?lang=en"> <img src="includes/images/twitter.png" style="width:70px;height:70px;"></a> &nbsp;
-  <a href="https://www.instagram.com/?hl=en">  <img src="includes/images/instagram.png" style="width:70px;height:70px;"></a> &nbsp;
-  <a href="https://www.behance.net/"> <img src="includes/images/behance.png" style="width:70px;height:70px;"></a> &nbsp;
-  <a href="https://github.com/"> <img src="includes/images/github.png" style="width:75px;height:75px;"></a> &nbsp;
-  <a href="https://www.google.com/intl/si/gmail/about/#"> <img src="includes/images/gmail.png" style="width:70px;height:70px;"></a> 
+   &nbsp;&nbsp;&nbsp;<h2><img src="includes/images/network.png" style="width:120px;height:120px;"><b><i>Connect</i></b></h2>
+   &nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/"> <img src="includes/images/facebook.png" style="width:60px;height:60px;"></a> &nbsp;
+  <a href="https://plus.google.com/discover"> <img src="includes/images/google-plus.png" style="width:60px;height:60px;"></a> &nbsp;
+  <a href="https://www.linkedin.com/">  <img src="includes/images/linkedin.png" style="width:60px;height:60px;"></a> &nbsp;
+  <a href="https://www.skype.com/en/"> <img src="includes/images/skype.png" style="width:60px;height:60px;"></a> &nbsp;
+  <a href="https://www.tumblr.com/"> <img src="includes/images/tumblr.png" style="width:60px;height:60px;"></a> <br><br>
+   &nbsp;&nbsp;&nbsp;<a href="https://twitter.com/login?lang=en"> <img src="includes/images/twitter.png" style="width:60px;height:60px;"></a> &nbsp;
+  <a href="https://www.instagram.com/?hl=en">  <img src="includes/images/instagram.png" style="width:60px;height:60px;"></a> &nbsp;
+  <a href="https://www.behance.net/"> <img src="includes/images/behance.png" style="width:60px;height:60px;"></a> &nbsp;
+  <a href="https://github.com/"> <img src="includes/images/github.png" style="width:70px;height:70px;"></a> &nbsp;
+  <a href="https://www.google.com/intl/si/gmail/about/#"> <img src="includes/images/gmail.png" style="width:60px;height:60px;"></a> 
   </div>
 	<div class="col-md-8" style="text-align:center;color:black;background:url(includes/images/wood.jpg);">
 		 <h2>.. Notifications ..</h2>
