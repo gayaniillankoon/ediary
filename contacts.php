@@ -64,19 +64,19 @@ session_start(); // start the session
        <form action="addcontacts.php" method="post">
        <div class="form-group">
             <label for="name" style="color: black">Name :</label>
-            <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+            <input type="text" class="form-control" id="name" placeholder="Name" name="name" max="20">
         </div>
         <div class="form-group">
             <label for="mob1" style="color: black">Mobile 1 :</label>
-            <input type="text" class="form-control" id="mob1" placeholder="Mobile 1" name="mob1">
+            <input type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" class="form-control" id="mob1" placeholder="Mobile 1" name="mob1" >
         </div>
         <div class="form-group">
             <label for="mob2" style="color: black">Mobile 2 :</label>
-            <input type="text" class="form-control" id="mob2" placeholder="Mobile 2" name="mob2">
+            <input type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" class="form-control" id="mob2" placeholder="Mobile 2" name="mob2">
         </div>
         <div class="form-group">
             <label for="home" style="color: black">Home :</label>
-            <input type="text" class="form-control" id="home" placeholder="Home" name="home">
+            <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" class="form-control" id="home" placeholder="Home" name="home">
         </div>
         <div class="form-group">
             <label for="email" style="color: black">Email :</label>

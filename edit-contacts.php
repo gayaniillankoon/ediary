@@ -14,7 +14,8 @@ else{//go to the logout.php page when clicking
 require_once 'db_access.php';
 $db_acc=db_con::db_access();
 
-if(isset($_POST['update_contacts'])){
+if(isset($_POST['update_contact'])){
+
     $sql = "UPDATE tbl_contacts SET name='".$_POST['name']."', mobile1='".$_POST['mobile1']."', mobile2='".$_POST['mobile2']."',
     home='".$_POST['home']."', email='".$_POST['email']."' WHERE id = '".$_GET['id']."'";
     $result= mysqli_query($conn,$sql) or die(mysqli_error($conn));
@@ -76,23 +77,23 @@ if($rec = mysqli_fetch_assoc($result)) {
             <div class="row">
             <div class="col-md-12">
             <label for="name"><b>Name</b></label>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-            <input style=" border: 2px solid green; border-radius: 4px;" type="text" id="name" name="name" value="<?php echo $contact_data['name'];  ?>" required ><br>
+            <input style=" border: 2px solid green; border-radius: 4px;" type="text" id="name" name="name" type="number" value="<?php echo $contact_data['name'];  ?>" required ><br>
             </div>
             </div>
             <div class="row">
             <div class="col-md-6">
             <label for="mob1"><b>Mobile 1</b></label>&nbsp;&nbsp;
-            <input style=" border: 2px solid green; border-radius: 4px;" type="text" id="mob1" name="mob1" value="<?php echo $contact_data['mob1'];  ?>" required><br>
+            <input style=" border: 2px solid green; border-radius: 4px;" id="mobile1" name="mobile1" type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" value="<?php echo $contact_data['mob1'];  ?>" required><br>
             </div>
             <div class="col-md-6">
             <label for="mob2"><b>Mobile 2</b></label>&nbsp;&nbsp;
-            <input style=" border: 2px solid green; border-radius: 4px;" type="text" id="mob2" name="mob2" value="<?php echo $contact_data['mob2'];  ?>" required><br>
+            <input style=" border: 2px solid green; border-radius: 4px;"  id="mobile2" name="mobile2" type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" value="<?php echo $contact_data['mob2'];  ?>" required><br>
             </div>
             </div>
             <div class="row">
             <div class="col-md-6">
             <label for="home"><b>Home</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input style=" border: 2px solid green; border-radius: 4px;" type="text" id="home" name="home" value="<?php echo $contact_data['home'];  ?>" required><br>
+            <input style=" border: 2px solid green; border-radius: 4px;"  id="home" name="home" type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" value="<?php echo $contact_data['home'];  ?>" required><br>
             </div>
             <div class="col-md-6">
             <label for="email"><b>Email</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
