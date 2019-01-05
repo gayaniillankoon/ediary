@@ -437,8 +437,6 @@ if($nor>0)
            	  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nwdetails">
                   Update Profile
               </button>
-              <button type="button" class="btn btn-danger"><a href="delprofile.php?profile_id={$rec['id']}\" onclick=\"return confirm('Delete the details?');\">Delete</a> 
-              </button>
            </div>
           </div>
           </div>
