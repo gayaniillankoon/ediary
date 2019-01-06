@@ -17,16 +17,21 @@ $db_acc=db_con::db_access();
 	
 	if (($username=="") && ($password==""))
 	{
+	    $_SESSION['errors'][] = "Please fill the required fields";
 		header("location:./index.php?input_er=1");
 	}
 	else
 	{
 		if (mysqli_num_rows($result)==0)
 		{
+            $_SESSION['errors'][] = "Invalid Username or Password";
+            $_SESSION['field_vals']['email'] = $_POST['email'];
 			header("location:./index.php?input_er=2");
 		}
 		elseif (!password_verify ( $password ,  $array['password'] ))
 		{
+            $_SESSION['errors'][] = "Invalid Username or Password";
+            $_SESSION['field_vals']['email'] = $_POST['email'];
 			header("location:./index.php?input_er=3");
 		}
 		

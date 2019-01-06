@@ -21,6 +21,24 @@
   </div>
   </div>
 
+    <div>
+        <?php
+        session_start();
+        if(isset($_SESSION['errors'])){
+            foreach ($_SESSION['errors'] as $item) {
+                ?>
+                <div class="alert alert-danger">
+                    <?php
+                    echo $item;
+                    $_SESSION['errors'] = null;
+                    ?>
+                </div>
+                <?php
+            }
+        }
+        ?>
+    </div>
+
    <div class="row"> 
     <div class="col-sm-4" style="background-image:linear-gradient(#CD853F,#FFFF00)">
      
@@ -34,15 +52,15 @@
             
             <div class="form-group">
                 <label for="exampleInputName" style="color: black">Full Name</label>
-                <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name" name="fullname">
+                <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name" name="fullname" value="<?php  echo ($_SESSION['field_vals']['name'] ?? '') ?>">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1" style="color: black">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="username">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="username"  value="<?php  echo ($_SESSION['field_vals']['username'] ?? '') ?>">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1"style="color: black">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password_1">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password_1" >
             </div>
             <div class="form-group">
             <label for="exampleInputPassword1" style="color:black"> Confirm Password</label>
@@ -101,6 +119,10 @@
       </div> 
 
     </div>
+<?php
 
+$_SESSION['field_vals'] = null;
+
+?>
 </body>
 </html>
