@@ -21,13 +21,13 @@ if (isset($_POST['register'])) {
    $password_2 = $_POST['password_2'];
 
 //if there are no errors, save user to database
-   if (count($errors)==0) {
-      //$password = md5($password_1);//encrypt password before storing in database(security)
+   //if (count($errors)==0) {
+      $password = password_hash($password_1, PASSWORD_DEFAULT);//encrypt password before storing in database(security)
       $sql = "INSERT INTO users (fullname, username, password)
-                      VALUES('$fullname','$email', '$password_2')";
+                      VALUES('$fullname','$email', '$password')";
       mysqli_query($conn, $sql)or die(mysqli_error($conn));   
       header('location:home.php');//redirect to home page             
-   }
+   //}
 }
 
 ?>

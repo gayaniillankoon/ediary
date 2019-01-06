@@ -25,7 +25,7 @@ $db_acc=db_con::db_access();
 		{
 			header("location:./index.php?input_er=2");
 		}
-		elseif ($array['password']!=$password)
+		elseif (!password_verify ( $password ,  $array['password'] ))
 		{
 			header("location:./index.php?input_er=3");
 		}
