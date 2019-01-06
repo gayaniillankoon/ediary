@@ -28,8 +28,8 @@ if (isset($_POST['register'])) {
    $password_2 = $_POST['password_2'];
 
       $password = password_hash($password_1, PASSWORD_DEFAULT);//encrypt password before storing in database(security)
-      $sql = "INSERT INTO users (fullname, username, password)
-                      VALUES('$fullname','$email', '$password')";
+      $sql = "INSERT INTO users (fullname, username, password, user)
+                      VALUES('$fullname','$email', '$password','$email')";
       mysqli_query($conn, $sql)or die(mysqli_error($conn));   
       header('location:home.php');//redirect to home page
 
