@@ -43,7 +43,7 @@ session_start(); // start the session
       }
     </style>
   </head>
-  <body>
+  <body style="background-color: #EEE8AA;">
     <div class="container-fluid">
     <?php $page='findlocation'; include_once 'includes/nav.php'?>
     </div>
@@ -99,7 +99,7 @@ session_start(); // start the session
       }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbguQG9Btwjace45tN5WtZdWKo8lXZOLI&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOLJIHcdHbG8I01-Fb50hoIft1IL2BsYI&callback=initMap">
     </script>
   </body>
 </html>

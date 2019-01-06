@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
     <ul class="navbar-nav">
         <li class="<?php if($page=='home'){echo 'active';}?>">
             <a class="nav-link" href="home.php">My Home</a>

@@ -19,7 +19,7 @@ $result= mysqli_query($conn,$sql) or die(mysqli_error($conn));
 
 $nor = mysqli_num_rows($result);
 
-$notes = [];
+$notes = array();
 
 if($nor>0)
 {

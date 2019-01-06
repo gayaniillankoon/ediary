@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 04, 2019 at 08:05 AM
+-- Generation Time: Jan 05, 2019 at 10:05 AM
 -- Server version: 5.1.53
 -- PHP Version: 5.3.4
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `notes` (
   `note` varchar(255) NOT NULL,
   `user` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
 
 --
 -- Dumping data for table `notes`
@@ -49,9 +49,8 @@ INSERT INTO `notes` (`id`, `date`, `note`, `user`) VALUES
 (9, '0000-00-00', ' SSSDFDFSSFSD', 'rashila@gmail.com'),
 (10, '2018-12-26', ' gggghh', 'gayanilakshi101@gmai'),
 (13, '2018-12-18', 'Today is the best day no avvd', 'demo@demo.com'),
-(14, '2018-12-20', 'Sonali hello ghffhhhhhhhhgjjjjjjjjjjjjjjjj jhhhhhhhhhhhhh', 'demo@demo.com'),
-(15, '2018-12-26', 'Today is the best we want to', 'demo@demo.com'),
-(16, '2018-12-27', ' httgchgcgxnnncxcnbcnbcncnnc', 'demo@demo.com'),
+(22, '2019-01-05', 'Hello a', 'demo@demo.com'),
+(21, '2019-01-04', ' i am girl who like to read books and magazines', 'jayani@gmail.com'),
 (17, '2018-12-27', 'Hi good morning friend', 'demo@demo.com'),
 (19, '2019-01-04', 'Hello how are you gg', 'demo@demo.com');
 
@@ -64,23 +63,24 @@ INSERT INTO `notes` (`id`, `date`, `note`, `user`) VALUES
 CREATE TABLE IF NOT EXISTS `tbl_contacts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
-  `mobile1` int(10) NOT NULL,
-  `mobile2` int(10) NOT NULL,
-  `home` int(10) NOT NULL,
+  `mobile1` varchar(10) NOT NULL,
+  `mobile2` varchar(10) NOT NULL,
+  `home` varchar(10) NOT NULL,
   `email` varchar(25) NOT NULL,
   `user` varchar(25) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `tbl_contacts`
 --
 
 INSERT INTO `tbl_contacts` (`id`, `name`, `mobile1`, `mobile2`, `home`, `email`, `user`) VALUES
-(1, 'Gayani', 987, 9876, 999, 'Gayani@gmail.com', 'gayanilakshi101@gmail.com'),
-(2, 'jhhhhhhhhhhhhhhhhh', 0, 0, 0, '', 'rashila@gmail.com'),
-(6, 'nayani', 9876666, 2147483647, 2147483647, 'Gayani@gmail.com', 'demo@demo.com'),
-(7, 'thilini', 98, -2147483648, 876543, 'dnmadhuwantha@gmail.com', 'demo@demo.com');
+(1, 'Gayani', '987', '9876', '999', 'Gayani@gmail.com', 'gayanilakshi101@gmail.com'),
+(2, 'jhhhhhhhhhhhhhhhhh', '0', '0', '0', '', 'rashila@gmail.com'),
+(6, 'nayani', '9876666', '2147483647', '2147483647', 'Gayani@gmail.com', 'demo@demo.com'),
+(7, 'thilini', '9856566', '-214748364', '876543', 'dnmadhuwantha@gmail.com', 'demo@demo.com'),
+(9, 'amma', '728676655', '721234568', '372230380', '', 'jayani@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -112,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `avatar` varchar(255) DEFAULT NULL,
   `user` varchar(40) NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `users`
@@ -123,4 +123,5 @@ INSERT INTO `users` (`user_id`, `fullname`, `username`, `password`, `name`, `add
 (3, 'rashila', 'rashila@gmail.com', 'rashila', 'Gayani and tharindu', 'qweqweqweqweqe', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, ''),
 (4, '', '', '', 'Gayani', 'Das', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, 'rashila@gmail.com'),
 (5, 'nayani illankoon', 'nayani@gmail.com', 'nayani', '', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, ''),
-(6, 'Tharindu lakshitha', 'demo@demo.com', 'demodemo', 'tharindu', 'galla,hvhfhffh,hhh', '2018-12-18', '09876543', '098765432', 'dfghjjkk', '34456788', '', '', '', '', '', '', '', '', '', '1546581373.jpg', 'demo@demo.com');
+(6, 'Tharindu lakshitha', 'demo@demo.com', 'demodemo', 'tharindu dana', 'galla,hvhfhffh,hhh', '2018-12-18', '09876543', '098765432', 'dfghjjkk', '34456788', '', '', '', '', '', '', '', '', '', '1546657414.jpg', 'demo@demo.com'),
+(7, 'jayani illankoon', 'jayani@gmail.com', 'jayani', 'jayani illankoon', '187/1, malkaduwawa,kurunegala', '1996-12-03', '', '', '', '', '', '', '', '', '', '', 'a-', '', '', '1546610925.jpg', 'jayani@gmail.com');
