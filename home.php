@@ -15,6 +15,9 @@ session_start(); // start the session
               //echo $_SESSION['uname']; 
               //echo $lgout; 
 
+
+
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -82,6 +85,17 @@ session_start(); // start the session
             echo $currentDateTime;
             ?>
          </h3>
+
+        
+         <form action="notes.php" method="GET">
+           <input id="search" type="date">
+           <input id="submit" type="submit" value="Search">
+         </form>
+
+
+
+
+
 	</div>
 </div> 
 </div>

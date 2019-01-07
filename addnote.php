@@ -6,9 +6,13 @@ require_once('db_access.php');
 
 $db_acc=db_con::db_access();
 
+
+
 	$date=$_POST['date'];
 	$note=$_POST['note'];
 	$username=$_SESSION['uname'];
+	
+	
 	
 	//echo "hhh";
 
