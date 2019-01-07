@@ -77,27 +77,27 @@ if($rec = mysqli_fetch_assoc($result)) {
             <div class="row">
             <div class="col-md-12">
             <label for="name"><b>Name</b></label>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-            <input style=" border: 2px solid green; border-radius: 4px;" type="text" id="name" name="name" type="number" value="<?php echo $contact_data['name'];  ?>" required ><br>
+            <input style=" border: 2px solid green; border-radius: 4px;" type="text" id="name" name="name" type="number" value="<?php echo $contact_data['name'];  ?>"><br>
             </div>
             </div>
             <div class="row">
             <div class="col-md-6">
             <label for="mob1"><b>Mobile 1</b></label>&nbsp;&nbsp;
-            <input style=" border: 2px solid green; border-radius: 4px;" id="mobile1" name="mobile1" type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" value="<?php echo $contact_data['mob1'];  ?>" required><br>
+            <input style=" border: 2px solid green; border-radius: 4px;" id="mobile1" name="mobile1" type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" value="<?php echo $contact_data['mob1'];  ?>"><br>
             </div>
             <div class="col-md-6">
             <label for="mob2"><b>Mobile 2</b></label>&nbsp;&nbsp;
-            <input style=" border: 2px solid green; border-radius: 4px;"  id="mobile2" name="mobile2" type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" value="<?php echo $contact_data['mob2'];  ?>" required><br>
+            <input style=" border: 2px solid green; border-radius: 4px;"  id="mobile2" name="mobile2" type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" value="<?php echo $contact_data['mob2'];  ?>"><br>
             </div>
             </div>
             <div class="row">
             <div class="col-md-6">
             <label for="home"><b>Home</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input style=" border: 2px solid green; border-radius: 4px;"  id="home" name="home" type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" value="<?php echo $contact_data['home'];  ?>" required><br>
+            <input style=" border: 2px solid green; border-radius: 4px;"  id="home" name="home" type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" value="<?php echo $contact_data['home'];  ?>"><br>
             </div>
             <div class="col-md-6">
             <label for="email"><b>Email</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input style=" border: 2px solid green; border-radius: 4px;" type="text" id="email" name="email" value="<?php echo $contact_data['email'];  ?>" required><br>
+            <input style=" border: 2px solid green; border-radius: 4px;" type="text" id="email" name="email" value="<?php echo $contact_data['email'];  ?>"><br>
              </div>
              </div>
             <br>
