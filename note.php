@@ -201,7 +201,10 @@ session_start(); // start the session
       <!-- Modal body -->
      <div class="modal-body">
        <form action="addnote.php" method="post">
-      Date:  <input type="date" id="date" name="date" required><br> <br>
+           <?php
+           $currentDateTime = date('Y-m-d');
+           ?>
+      Date:  <input type="date" id="date" name="date" value="<?php echo $currentDateTime; ?>" required><br> <br>
       Note:  <textarea  id="note" name="note" rows="10" cols="40"> </textarea><br> <br>
     </div>
 

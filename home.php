@@ -78,19 +78,43 @@ session_start(); // start the session
   <a href="https://www.google.com/intl/si/gmail/about/#"> <img src="includes/images/gmail.png" style="width:60px;height:60px;"></a> 
   </div>
 	<div class="col-md-8" style="text-align:center;color:black;background:url(includes/images/wood.jpg);">
-		 <h2>.. Notifications ..</h2>
-         <h3>
+		 <h2>Filter your Notes</h2>
+
             <?php
             $currentDateTime = date('Y-m-d');
-            echo $currentDateTime;
             ?>
-         </h3>
+
+
 
         
-         <form action="notes.php" method="GET">
-           <input id="search" type="date">
-           <input id="submit" type="submit" value="Search">
+         <form action="home.php" method="GET">
+           <input id="search" type="date" name="date" value="<?php echo $_GET['date'] ?? $currentDateTime; ?>">
+           <input id="submit" type="submit" name="search" value="Search">
          </form>
+        <br><br>
+
+        <?php
+
+        require_once 'db_access.php';
+        $db_acc=db_con::db_access();
+
+        if(isset($_GET['search'])) {
+            $user = $_SESSION['uname'];
+            $sql = "SELECT id, date, note FROM notes WHERE user='$user' AND date = '".$_GET['date']."' ORDER BY id DESC";
+            $result = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+            $nor = mysqli_num_rows($result);
+            if ($nor > 0) {
+                while ($rec = mysqli_fetch_assoc($result)) {
+                    echo($rec["note"]);
+                    echo " <a href='edit-note.php?id=" . $rec["id"] . "' type='button' class='btn btn-success' > Edit </a>";
+                    echo(" <button type='button' class='btn btn-danger'> <a href=\"delnote.php?note_id={$rec['id']}\" onclick=\"return confirm('Delete the Contact?');\">Delete</a> </button>");
+                    echo("<br><br>");
+                }
+            }
+        }
+
+
+        ?>
 
 
 
