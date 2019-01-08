@@ -261,7 +261,7 @@ if($nor>0)
 	{
 		echo('<tr>');
 				echo("<td>".$rec["date"]."</td>");
-				echo("<td>".$rec["note"]."</td>");
+				echo("<td>".base64_decode($rec["note"])."</td>");
 	      echo "<td><a href='edit-note.php?id=".$rec["id"]."' type='button' class='btn btn-success' > Edit </a></td>";
       echo("<td><button type='button' class='btn btn-danger'> <a href=\"delnote.php?note_id={$rec['id']}\" onclick=\"return confirm('Delete the Contact?');\">Delete</a> </button></td>");
 				

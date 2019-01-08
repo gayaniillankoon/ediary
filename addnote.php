@@ -9,7 +9,7 @@ $db_acc=db_con::db_access();
 
 
 	$date=$_POST['date'];
-	$note=$_POST['note'];
+	$note=base64_encode($_POST['note']);
 	$username=$_SESSION['uname'];
 	
 	

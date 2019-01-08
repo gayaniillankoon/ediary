@@ -105,7 +105,7 @@ session_start(); // start the session
             $nor = mysqli_num_rows($result);
             if ($nor > 0) {
                 while ($rec = mysqli_fetch_assoc($result)) {
-                    echo($rec["note"]);
+                    echo(base64_decode($rec["note"]));
                     echo " <a href='edit-note.php?id=" . $rec["id"] . "' type='button' class='btn btn-success' > Edit </a>";
                     echo(" <button type='button' class='btn btn-danger'> <a href=\"delnote.php?note_id={$rec['id']}\" onclick=\"return confirm('Delete the Contact?');\">Delete</a> </button>");
                     echo("<br><br>");
